@@ -748,6 +748,16 @@ class ModuleBase(metaclass=_ModuleBaseMeta):
         )
 
 
+    def _train_backend(self,
+                       module_class, *args,
+                       backend_type=None,
+                       **kwargs,):
+        """This function implements a train functionality that uses the module_class
+        as input and provides the train capability using appropriate backend.
+        """
+        # Should this be a class method ?
+
+
 class ModuleLoader:
     def __init__(self, model_path):
         """Construct a new module loader.
